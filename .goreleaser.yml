@@ -26,7 +26,6 @@ archives:
     files:
       - protocol-register.bat
       - protocol-deregister.bat
-      - vlc-protocol.desktop
 
 changelog:
   sort: asc
