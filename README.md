@@ -35,7 +35,7 @@ vlc://file://X:/path/to/local/file # windows
 
 vlc://https://ia804605.us.archive.org/22/items/big-buck-bunny-4k/Big_Buck_Bunny_4K.mp4
 
-potplayer://https://www.youtube.com/watch?v=_ZQSpkgr5pc
+potplayer://https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 ```
 **For PotPlayer use `potplayer://` instead of `vlc://`**
