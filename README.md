@@ -29,7 +29,9 @@ sudo rm /usr/local/bin/player-protocol
 ## Usage
 
 ```
-vlc://file:///path/to/local/file
+vlc://file:///path/to/local/file #linux
+
+vlc://file://X:/path/to/local/file # windows
 
 vlc://https://ia804605.us.archive.org/22/items/big-buck-bunny-4k/Big_Buck_Bunny_4K.mp4
 
