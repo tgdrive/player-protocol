@@ -1,7 +1,6 @@
 //go:build linux
-// +build linux
 
-package main
+package path
 
 import (
 	"fmt"
@@ -9,7 +8,7 @@ import (
 	"path/filepath"
 )
 
-func findPlayerPath(player string) (string, error) {
+func FindPlayerPath(player string) (string, error) {
 	if player == "potplayer" {
 		return "", fmt.Errorf("PotPlayer is not supported on Linux")
 	}

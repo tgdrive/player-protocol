@@ -1,7 +1,6 @@
 //go:build windows
-// +build windows
 
-package main
+package path
 
 import (
 	"fmt"
@@ -11,7 +10,7 @@ import (
 	"golang.org/x/sys/windows/registry"
 )
 
-func findPlayerPath(player string) (string, error) {
+func FindPlayerPath(player string) (string, error) {
 	path, err := findPathInRegistry(player)
 	if err == nil {
 		return path, nil

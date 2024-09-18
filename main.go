@@ -1,4 +1,3 @@
-// main.go
 package main
 
 import (
@@ -7,6 +6,8 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+
+	player_path "github.com/tgdrive/player-protocol/pkg/path"
 )
 
 func main() {
@@ -46,7 +47,7 @@ func main() {
 		link, _ = url.QueryUnescape(link)
 	}
 
-	playerPath, err := findPlayerPath(player)
+	playerPath, err := player_path.FindPlayerPath(player)
 	if err != nil {
 		fmt.Printf("Error finding %s path: %v\n", player, err)
 		os.Exit(1)

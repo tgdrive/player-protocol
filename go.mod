@@ -1,4 +1,4 @@
-module player-protocol
+module github.com/tgdrive/player-protocol
 
 go 1.22.0
 
