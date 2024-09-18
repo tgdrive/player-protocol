@@ -1,0 +1,41 @@
+version: 2
+project_name: player-protocol
+builds:
+  - env:
+      - CGO_ENABLED=0
+    main: main.go
+    flags: -trimpath
+    ldflags:
+     - -extldflags=-static
+     - -H=windowsgui
+     - -s -w
+    mod_timestamp: "{{ .CommitTimestamp }}"
+    goos:
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+
+checksum:
+  name_template: "{{ .ProjectName }}_checksums.txt"
+  
+archives:
+  - name_template: "{{ .ProjectName }}-{{ .Tag }}-{{ .Os }}-{{ .Arch }}"
+    format: zip
+    files:
+      - protocol-register.bat
+      - protocol-deregister.bat
+      - vlc-protocol.desktop
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+      - '^ci:'
+      - '^README'
+      - '^Update'
+      - Merge pull request
+      - Merge branch
