@@ -1,6 +1,6 @@
 # player-protocol
 
-**Open VLC and Pot Player directly  from browser.Support ``file://`` ``https://`` ``http://`` protocols.**
+**Open VLC and Pot Player directly  from browser.Support ``file://`` ``https://`` ``http://`` protocols.You can't open local file directly from browser in any of these players so player-protocol enables this through file:// protocol.**
 
 ## Setup
 
