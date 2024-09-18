@@ -29,11 +29,9 @@ sudo rm /usr/local/bin/player-protocol
 ## Usage
 
 ```
-vlc://file:///path/to/file
+vlc://file:///path/to/local/file
 
-vlc://https://example.com/path/to/file
-
-vlc://http://example.com/path/to/file
+vlc://https://ia804605.us.archive.org/22/items/big-buck-bunny-4k/Big_Buck_Bunny_4K.mp4
 
 ```
 **For PotPlayer use `potplayer://` instead of `vlc://`**
