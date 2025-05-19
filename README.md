@@ -16,7 +16,7 @@
 ### Install on Linux
 
 ```bash
-curl -s https://sh-install.vercel.app/tgdrive/player-protocol?move=1 | bash
+curl -sL instl.vercel.app/tgdrive/player-protocol | bash
 curl -LO https://raw.githubusercontent.com/tgdrive/player-protocol/main/vlc-protocol.desktop
 xdg-desktop-menu install vlc-protocol.desktop
 rm vlc-protocol.desktop
